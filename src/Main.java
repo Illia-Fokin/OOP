@@ -1,15 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        RectangleArea r1 = new RectangleArea();
-        r1.processRectangle();
+//        RectangleArea r1 = new RectangleArea();
+//        r1.processRectangle();
 
-        Car car1 = new Car("AMG", "Mercedes", "Black", 2021, 1, 68_320);
-        Car car2 = new Car("X","BMW","Blue-Yellow",2023,1,89_900);
+        Car car1 = new Car("AMG", "Mercedes", "Blachfghfhk", 2021, 1, 68_320);
+        Car car2 = new Car("da", "Mercedes", "Black", 2021, 1, 68_320);
         System.out.println(car1.getColor());
         System.out.println(car2.getColor());
-        car1.setColor("Brown");
-        car2.setColor("Purple");
         System.out.println(car1.getColor());
         System.out.println(car2.getColor());
+
+        System.out.println("Are these objects equal? : " + car1.equals(car2));
+        System.out.println(car1.hashCode());
+        System.out.println(car2.hashCode());
+
     }
 }
